@@ -175,3 +175,9 @@ header h3 {
   /* color: var(--color-base-primary-green); */
   margin-left: 0.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80vw;
+  }
+}
