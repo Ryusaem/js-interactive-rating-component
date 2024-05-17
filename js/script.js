@@ -12,7 +12,8 @@ boxes.forEach((box) => {
     // Add "selected" class to the clicked box
     box.classList.add("selected");
 
-    const rating = box.getAttribute("data-value");
+    // const rating = box.getAttribute("data-value"); // general approach
+    const rating = box.dataset.value; // modern approach
 
     localStorage.setItem("rating", rating);
   });
